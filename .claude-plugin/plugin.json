@@ -1,9 +1,9 @@
 {
-  "name": "langgraph",
-  "version": "1.0.0",
-  "description": "Build AI agents with LangGraph using best practices. Includes patterns for state management, tools, streaming, human-in-the-loop, and error prevention.",
+  "name": "langchain-ai",
+  "version": "2.0.0",
+  "description": "Build AI applications with LangChain and LangGraph. Agents, RAG pipelines, and LCEL chains with best practices.",
   "author": {
     "name": "Ryan"
   },
-  "keywords": ["langgraph", "langchain", "agents", "ai", "llm", "python"]
+  "keywords": ["langchain", "langgraph", "agents", "rag", "retrieval", "vector", "lcel", "chains", "ai", "llm", "python"]
 }
