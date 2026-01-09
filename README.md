@@ -15,11 +15,19 @@ Build AI applications with LangChain and LangGraph. This plugin provides compreh
 ## Installation
 
 ```bash
-# Add to your Claude Code plugins
-claude plugins add /path/to/langchain-community-plugin
+# Install from GitHub (recommended - supports updates)
+claude plugins add https://github.com/Codeblockz/langchain-community-plugin
 ```
 
-Or copy to your project's `.claude-plugin/` directory.
+To update the plugin later:
+```bash
+claude plugins update langchain-community
+```
+
+Alternatively, install from a local path:
+```bash
+claude plugins add /path/to/langchain-community-plugin
+```
 
 ## Skills
 
@@ -84,20 +92,20 @@ Build data processing pipelines using LangChain Expression Language.
 
 | Command | Description |
 |---------|-------------|
-| `/langchain-ai:new-agent` | Scaffold a new agent (create_agent or StateGraph) |
-| `/langchain-ai:add-tool` | Add a tool to an existing agent |
+| `/langchain-community:new-agent` | Scaffold a new agent (create_agent or StateGraph) |
+| `/langchain-community:add-tool` | Add a tool to an existing agent |
 
 ### RAG
 
 | Command | Description |
 |---------|-------------|
-| `/langchain-ai:new-rag` | Scaffold a RAG pipeline with your choice of vector store |
+| `/langchain-community:new-rag` | Scaffold a RAG pipeline with your choice of vector store |
 
 ### Chains
 
 | Command | Description |
 |---------|-------------|
-| `/langchain-ai:new-chain` | Scaffold a chain (summarization, extraction, classification, translation) |
+| `/langchain-community:new-chain` | Scaffold a chain (summarization, extraction, classification, translation) |
 
 ## Agents (Code Reviewers)
 
@@ -163,7 +171,7 @@ Claude: [Uses langchain-chains skill, creates extraction chain with Pydantic]
 ## Plugin Structure
 
 ```
-langchainSkills/
+langchain-community-plugin/
 ├── .claude-plugin/
 │   └── plugin.json
 ├── skills/
@@ -175,11 +183,12 @@ langchainSkills/
 │   ├── add-tool.md
 │   ├── new-rag.md
 │   └── new-chain.md
-└── agents/
-    ├── langgraph-reviewer.md
-    └── rag-reviewer.md
+├── agents/
+│   ├── langgraph-reviewer.md
+│   └── rag-reviewer.md
+└── LICENSE
 ```
 
 ## Version
 
-v2.0.0 - Added RAG and Chains skills, renamed from `langgraph` to `langchain-ai`
+v2.0.0 - Added RAG and Chains skills, renamed to `langchain-community`
