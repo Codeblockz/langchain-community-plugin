@@ -1,8 +1,6 @@
 {
-  "mcpServers": {
-    "langchain-docs": {
-      "type": "sse",
-      "url": "https://docs.langchain.com/mcp"
-    }
+  "langchain-docs": {
+    "type": "sse",
+    "url": "https://docs.langchain.com/mcp"
   }
 }
