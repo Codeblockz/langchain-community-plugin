@@ -7,5 +7,5 @@
   },
   "license": "Apache-2.0",
   "keywords": ["langchain", "langgraph", "agents", "rag", "retrieval", "vector", "lcel", "chains", "ai", "llm", "python"],
-  "mcpServers": "./.mcp.json"
+  "mcpServers": ".claude-plugin/.mcp.json"
 }
